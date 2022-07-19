@@ -1,15 +1,15 @@
 # 📅 ion2-calendar
 
-[![Build Status](https://travis-ci.org/HsuanXyz/ion2-calendar.svg?branch=master)](https://travis-ci.org/HsuanXyz/ion2-calendar)
-[![Dependency Status](https://david-dm.org/HsuanXyz/ion2-calendar.svg)](https://david-dm.org/HsuanXyz/ion2-calendar)
+[![Build Status](https://travis-ci.org/lucasnpinheiro/ion2-calendar.svg?branch=master)](https://travis-ci.org/lucasnpinheiro/ion2-calendar)
+[![Dependency Status](https://david-dm.org/lucasnpinheiro/ion2-calendar.svg)](https://david-dm.org/lucasnpinheiro/ion2-calendar)
 [![NPM version][npm-image]][npm-url]
 [![Downloads][downloads-image]][downloads-url]
 [![MIT License][license-image]][license-url]
 
-![date](https://github.com/HsuanXyz/hsuanxyz.github.io/blob/master/assets/ion2-calendar/calendar.png?raw=true)
+![date](https://github.com/lucasnpinheiro/lucasnpinheiro.github.io/blob/master/assets/ion2-calendar/calendar.png?raw=true)
 
 <p align="center">
-    <img width="800" src="https://github.com/HsuanXyz/hsuanxyz.github.io/blob/master/assets/ion2-calendar/calendar-1.png?raw=true">
+    <img width="800" src="https://github.com/lucasnpinheiro/lucasnpinheiro.github.io/blob/master/assets/ion2-calendar/calendar-1.png?raw=true">
 </p>
 
 - 支持日期范围
@@ -22,7 +22,7 @@
 
 # 支持
 
-- ionic-angular `^3.0.0` [2.x](https://github.com/HsuanXyz/ion2-calendar/tree/v2)
+- ionic-angular `^3.0.0` [2.x](https://github.com/lucasnpinheiro/ion2-calendar/tree/v2)
 - @ionic/angular `4.0.0`
 
 # Demo
