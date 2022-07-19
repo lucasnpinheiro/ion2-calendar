@@ -11,5 +11,5 @@ const getIconMap = (): Map<string, string> => {
 
 export const isIonIconsV4 = (): boolean => {
   const iconMap = getIconMap();
-  return !!iconMap.get('md-arrow-dropdown');
+  return !!iconMap.get('arrow-back-circle');
 };

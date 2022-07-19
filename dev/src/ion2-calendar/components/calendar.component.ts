@@ -14,7 +14,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 import * as moment from 'moment';
 import { defaults, pickModes } from '../config';
-import {isIonIconsV4} from "../utils/icons";
+import { isIonIconsV4 } from "../utils/icons";
 
 export const ION_CAL_VALUE_ACCESSOR: Provider = {
   provide: NG_VALUE_ACCESSOR,
@@ -42,7 +42,7 @@ interface CompatibleIcons {
                     [attr.aria-label]="getDate(monthOpt.original.time) | date:MONTH_DATE_FORMAT"
                     (click)="switchView()">
           {{ _monthFormat(monthOpt.original.time) }}
-          <ion-icon class="arrow-dropdown"
+          <ion-icon class="arrow-back-circle"
                     [name]="_view === 'days' ? _compatibleIcons.caretDown : _compatibleIcons.caretUp"></ion-icon>
         </ion-button>
       </ng-template>
@@ -149,21 +149,12 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
   readonly MONTH_DATE_FORMAT = 'MMMM yyyy';
 
   constructor(public calSvc: CalendarService) {
-    if (isIonIconsV4()) {
-      this._compatibleIcons = {
-        caretDown: 'md-arrow-dropdown',
-        caretUp: 'md-arrow-dropup',
-        chevronBack: 'ios-arrow-back',
-        chevronForward: 'ios-arrow-forward',
-      };
-    } else {
-      this._compatibleIcons = {
-        caretDown: 'caret-down-outline',
-        caretUp: 'caret-up-outline',
-        chevronBack: 'chevron-back-outline',
-        chevronForward: 'chevron-forward-outline',
-      };
-    }
+    this._compatibleIcons = {
+      caretDown: 'arrow-down-circle',
+      caretUp: 'arrow-up-circle',
+      chevronBack: 'arrow-back-circle',
+      chevronForward: 'arrow-forward-circle',
+    };
   }
 
   ngOnInit(): void {
@@ -307,9 +298,9 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
     }
   }
 
-  _onChanged: Function = () => {};
+  _onChanged: Function = () => { };
 
-  _onTouched: Function = () => {};
+  _onTouched: Function = () => { };
 
   _payloadToTimeNumber(value: CalendarComponentPayloadTypes): number {
     let date;
